@@ -2,7 +2,6 @@ import React from 'react';
 import { Facebook, ExternalLink } from 'lucide-react';
 
 export const Gallery = () => {
-  // Bhai, put your 6 best photos in the 'public' folder and name them exactly like this:
   const projects = [
     {
       id: 1,
@@ -72,3 +71,32 @@ export const Gallery = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                 <span className="text-blue-400 text-sm font-bold uppercase tracking-wider mb-2">
                   {project.category}
+                </span>
+                <h3 className="text-white text-xl font-bold">
+                  {project.title}
+                </h3>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Facebook CTA */}
+        <div className="mt-16 text-center">
+          <a 
+            href="https://www.facebook.com/wrightwindowsdoors" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-700 transition shadow-lg transform hover:-translate-y-1"
+          >
+            <Facebook className="w-5 h-5" />
+            View More Work on Facebook <ExternalLink className="w-4 h-4 ml-1 opacity-70" />
+          </a>
+          <p className="mt-4 text-slate-500 text-sm">
+            We update our portfolio weekly with our latest local jobs.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  );
+};
