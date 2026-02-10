@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon_wright.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wright Windows | High-Spec Glazing Specialists</title>
+    
+    <script type="module" crossorigin src="/assets/index-BZt3Dqk8.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-YF1TJc_m.css">
+
+    <style>
+      /* 1. RESET & CLEANUP */
+      * { box-sizing: border-box !important; } 
+      header, .bolt-header, footer, .react-footer { display: none !important; }
+
+      /* KILL THE GHOST LOGO IN THE HERO SECTION */
+      #root img[alt*="Wright Windows and Doors Logo"] {
+        display: none !important;
+      }
+
+      /* 2. WEB (DESKTOP) STYLES */
+      #weborigin-header {
+        background: #FFFFFF !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 10px 6% !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0; 
+        z-index: 99999;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      }
+
+      .header-logo-img {
+        height: 80px !important; 
+        width: auto !important;
+        display: block !important;
+      }
+
+      .nav-btns { display: flex; gap: 15px; }
+      
+      .btn-base {
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 18px; 
+        padding: 14px 28px; 
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .btn-call { color: #1e293b; border: 2.5px solid #1e293b; background: white; }
+      .btn-quote { color: #FFFFFF; background-color: #2563eb; }
+
+      #root { margin-top: 120px; } 
+
+      #weborigin-footer {
+        background: #0f172a !important;
+        color: white !important;
+        padding: 60px 6% 20px 6% !important;
+        font-family: sans-serif;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 40px;
+      }
+
+      .footer-logo-img {
+        width: 280px !important; 
+        margin-bottom: 25px;
+        display: block !important;
+      }
+
+      .footer-col h3 { font-size: 18px; margin-bottom: 15px; font-weight: 600; color: white; }
+      .footer-col p, .footer-col li, .footer-col a { color: #94a3b8; font-size: 14px; line-height: 1.6; text-decoration: none; }
+
+      #bottom-bar {
+        grid-column: 1 / -1;
+        text-align: center;
+        border-top: 1px solid #1e293b;
+        padding-top: 25px;
+        margin-top: 20px;
+        color: #64748b;
+        font-size: 12px;
+      }
+
+      /* 3. MOBILE STYLES */
+      @media (max-width: 768px) {
+        .nav-btns { display: none !important; } 
+
+        #weborigin-header { 
+            padding: 20px 6% !important; 
+            justify-content: center !important; 
+        }
+        
+        .header-logo-img { height: 85px !important; }
+        .footer-logo-img { width: 250px !important; }
+
+        #weborigin-footer { 
+            grid-template-columns: 1fr; 
+            padding: 40px 8% !important;
+        }
+
+        #root { margin-top: 125px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="weborigin-header">
+      <a href="/"><img src="header-logo.png" class="header-logo-img" alt="Wright Windows"></a>
+      <div class="nav-btns">
+        <a href="tel:447812196147" class="btn-base btn-call">📞 Call Now</a>
+        <a href="https://wa.me/447812196147" class="btn-base btn-quote">Get a Quote</a>
+      </div>
+    </div>
+
+    <div id="root"></div>
+
+    <div id="weborigin-footer">
+      <div class="footer-col">
+        <img src="footer-logo.png" class="footer-logo-img" alt="WW-Logo">
+        <h3>Established Local Craftsmanship</h3>
+        <p>Quality glazing solutions across South Yorkshire since 1998.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact Rob</h3>
+        <p>
+          📞 +44 7812 196147<br>
+          📧 wrightwindowsdoors@gmail.com<br>
+          <a href="https://www.facebook.com/wrightwindowsdoors" target="_blank">f Follow us on Facebook</a>
+        </p>
+        <a href="https://wa.me/447812196147" style="background-color: #25D366; color: white !important; margin-top: 15px;" class="btn-base">
+          <span>💬</span> WhatsApp
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Service Areas</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li>Doncaster</li>
+          <li>Wakefield</li>
+          <li>Barnsley</li>
+          <li>Rotherham</li>
+        </ul>
+      </div>
+
+      <div id="bottom-bar">
+        © 2026 Wright Windows and Doors. All rights reserved. <br>
+        Designed & Developed by <span style="color: #3b82f6; font-weight: bold;">WebOrigin</span>
+      </div>
+    </div>
+  </body>
+</html>
